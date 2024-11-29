@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy New Year Babygirl!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('/images/bg.jpg');
+            background-color: white;
+            font-family: Arial, sans-serif;
+            overscroll-behavior-y: contain;
+        }
+        .swiper {
+            width: 90vw;
+            max-width: 350px;
+            height: 70vh;
+            max-height: 500px;
+        }
+        .swiper-slide {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .slide-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            transition: filter 0.3s ease;
+        }
+        .slide-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: justify;
+            color: rgb(241, 187, 187);
+            font-weight: bold;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 10;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            padding: 0 15px;
+        }
+        .slide-image.blurred {
+            filter: blur(5.8px) brightness(1);
+        }
+        #abccc.slide-image.blurred{
+            filter: blur(30px);
+        }
+        .slide-text.visible {
+            opacity: 1;
+        }
+        #abc {
+            color: rgb(255, 255, 255);
+        }
+
+        @media (max-width: 480px) {
+            .swiper {
+                width: 95vw;
+                height: 60vh;
+            }
+            .slide-text {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-height: 600px) {
+            .swiper {
+                height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/images/intro.jpg" alt="Instructions" class="slide-image">
+                <div class="slide-text">Swipe and Enjoy!</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/2024.jpg" class="slide-image">
+                <div class="slide-text">Hello babygirl! It's been a great year knowing you, having you in my life. However, I still want you to know my side of the story, cause I won't end this chapter without a proper conclusion and you're the only one I feel like sharing this to.</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/calender.jpg" class="slide-image">
+                <div class="slide-text">I was lost at the beginning of 2024, but it was 15th February, that I started noticing you or you can say started having feelings for you.</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/1732819038565.jpg" class="slide-image">
+                <div class="slide-text" id="abc">Ever since, not a single day has passed by where I had no thought of you. You were on my mind without any effort or reason. You were on my mind and in my heart all the time.</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/1732819038492.jpg" class="slide-image">
+                <div class="slide-text" id="abc">Then ofcourse, I proposed you. Started having conversations and a little bit flirting. Those were good times, you blushing and all, acting like nothing's happening.</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/alone.jpg" class="slide-image">
+                <div class="slide-text">Eventually, my mind came to a conclusion, this girl can't be MINE! Never! Had this thought in mind for long. Summer breaks, had zero interaction with you and rest of the friends. But third sem happened!!</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/love again.jpg" class="slide-image">
+                <div class="slide-text">Saw you again, but this time fell deeper in love. This one hit harder than the previous one. Now cannot resist talking to you, started flirting even more cause I think you're okay with it (atleast you didn't complain till now).</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/idk.jpg" class="slide-image">
+                <div class="slide-text">Constant flow of feelings, whether you like talking to me, am I annoying her, etc etc. I don't know, kuch hoga toh bol degi khud. Still flirting and texting, cause I want you to feel like you can get love more than you can imagine.</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/bright.jpg" class="slide-image">
+                <div class="slide-text" id="abc">You might have a bitter past or bad experiences, I don't know, but be mine and I'll be your sweetest future!!</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/1732819038272.jpg" class="slide-image">
+                <div class="slide-text" id="abc">You've got the hold on my heart that cannot break even if I wanted to. This feeling is overwhelming, humbling and painful a little. Little moments I enjoyed with you, even a second of Hi or staring at this smiling face, hearing your voice or leaving all my work and picking you up just for that extra 30 min of interaction, still feel like having more!!</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/flower_garden.jpg" class="slide-image">
+                <div class="slide-text" id="abc">I feel like moving on from you, but that innocence of your eyes traps me, I'm not even addicted to alcohol or cigarettes that much, you're on my mind 24x7 without any nashe. You're the addiction I crave for. Your little hugs feel like sukoon to me.</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/1732819038414.jpg" class="slide-image">
+                <div class="slide-text">Whenever I look at your pictures, I just wish I could pull you out of it and hug you tightly.</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/book.jpg" class="slide-image">
+                <div class="slide-text">If life was a book, then meeting you is my favourite chapter.</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/1732819038341.jpg" class="slide-image">
+                <div class="slide-text">I have known alot about you now. But still<br><br>TEACH ME HOW TO LOVE YOU THE WAY YOU WANT TO BE LOVED.<br><br>TELL ME WHAT MAKES YOU HAPPY<br><br>TELL ME HOW TO GET YOU<br><br>TELL ME WHAT TO DO SO I CAN BE YOURS AND YOU CAN BE MINE</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/1732819038375.jpg" class="slide-image">
+                <div class="slide-text">I know you have already rejected me, you have to study, make your career etc., I don't know about mine, but what I deeply desire is that it ends with YOU & I together.</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/new year.jpg" class="slide-image">
+                <div class="slide-text">A new year, more flirting, more memories and much more...<br>Wishing you a very<br><br>HAPPY NEW YEAR BABYGIRL!!<br>Lots of love &lt;3</div>
+            </div>
+        </div>
+    </div>
+    <audio id="background-audio" autoplay loop>
+        <source src="videoplayback.mp4" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"></script>
+    <script>
+        function initializeAudio() {
+            const audio = document.getElementById('background-audio');
+            
+            // Set volume
+            audio.volume = 0.5;
+
+            // Attempt to play with multiple strategies
+            const playPromise = audio.play();
+
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    // Audio started playing successfully
+                    audio.loop = true;
+                }).catch(error => {
+                    // If autoplay is prevented, try with user interaction
+                    console.log('Autoplay prevented', error);
+                    
+                    // Add a listener for any user interaction
+                    document.addEventListener('click', () => {
+                        audio.play();
+                        audio.loop = true;
+                    }, { once: true });
+                });
+            }
+        }
+
+        const swiper = new Swiper('.swiper', {
+            effect: 'cards',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            preventInteractionOnTransition: true,
+            speed: 300
+        });
+
+        document.querySelectorAll('.swiper-slide').forEach(slide => {
+            slide.addEventListener('click', () => {
+                const image = slide.querySelector('.slide-image');
+                const text = slide.querySelector('.slide-text');
+                
+                image.classList.toggle('blurred');
+                text.classList.toggle('visible');
+            });
+        });
+
+        // Prevent default touch behaviors
+        document.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+        }, { passive: false });
+
+        // Initialize audio when DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', initializeAudio);
+
+        // Fallback for browsers with strict autoplay policies
+        window.addEventListener('load', initializeAudio);
+    </script>
+</body>
+</html>
